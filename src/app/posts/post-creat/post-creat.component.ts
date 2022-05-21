@@ -24,6 +24,7 @@ export class PostCreatComponent implements OnInit {
     // } ;
     // this.postCreated.emit(post);
     this.PostService.addPost(form.value.title , form.value.content);
+    form.resetForm()
   }
   ngOnInit(): void {}
 }
